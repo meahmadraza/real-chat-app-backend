@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5001;
 
 //cors config to connect frontend with backend
 app.use(cors({
-    origin: ["http://localhost:5174/"],
+    origin: "https://chat-app-frontend-neon-xi.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 
