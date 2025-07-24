@@ -9,7 +9,9 @@ export const generateToken = (userId, res) => {
         secure: true,
         sameSite: "None",
         maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-        domain: ".railway.app"
+        domain: "real-chat-app-backend-production.up.railway.app", // your railway domain
+        path: "/",
+        partitioned: true
     })
     return token;
 }
