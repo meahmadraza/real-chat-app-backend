@@ -72,7 +72,7 @@ export const login = async (req, res) => {
 }
 export const logout = async (req, res) => {
     try {
-        res.cookie("jwt", "", {
+        res.cookie("jwt", token, {
             httpOnly: true,
             secure: true,
             sameSite: "None",
