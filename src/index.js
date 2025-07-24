@@ -17,8 +17,7 @@ app.use(cors({
     origin: "https://chat-app-frontend-neon-xi.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
-    exposedHeaders: ['set-cookie']
-
+    includeCredentials: true,
 }));
 app.use(express.json());
 app.use(cookieParser());
