@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5001;
 app.use(cookieParser());
 //cors config to connect frontend with backend
 app.use(cors({
-    origin: ["https://chat-app-frontend-neon-xi.vercel.app"],
+    origin: "https://chat-app-frontend-neon-xi.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 
