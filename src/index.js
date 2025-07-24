@@ -11,7 +11,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5001;
 
-app.use(cookieParser());
+
 //cors config to connect frontend with backend
 app.use(cors({
     origin: "https://chat-app-frontend-neon-xi.vercel.app",
@@ -21,6 +21,7 @@ app.use(cors({
 
 }));
 app.use(express.json());
+app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes)
